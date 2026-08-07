@@ -70,10 +70,7 @@ func _physics_process(delta):
 
 	previously_floored = is_on_floor()
 
-# Handle animation(s)
-
 func handle_effects(delta):
-
 	particles_trail.emitting = false
 	sound_footsteps.stream_paused = true
 
@@ -102,12 +99,7 @@ func handle_effects(delta):
 	elif animation.current_animation != "jump":
 		animation.play("jump", 0.1)
 
-# Handle movement input
-
 func handle_controls(delta):
-
-	# Movement
-
 	var input := Vector3.ZERO
 
 	input.x = Input.get_axis("move_right", "move_left")

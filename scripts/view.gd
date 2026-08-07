@@ -14,7 +14,7 @@ var camera_offset: Vector3 = Vector3.ZERO
 
 func _ready():
 	camera_offset = camera.position
-	camera_rotation = rotation_degrees # Initial rotation
+	camera_rotation = rotation_degrees
 
 func _physics_process(delta):
 	if target:
