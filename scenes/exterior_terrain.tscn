@@ -1,0 +1,645 @@
+[gd_scene format=3 uid="uid://div3bxbcwagiq"]
+
+[node name="Exterior_Terrain" type="Node3D" unique_id=370708302]
+
+[node name="Entryway_Beach" type="CSGCombiner3D" parent="." unique_id=2129997389]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.974739, 0, 0)
+use_collision = true
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Entryway_Beach" unique_id=802900918]
+transform = Transform3D(6.2066393, 0.14324814, 0, -0.8983542, 0.9896869, 0, 0, 0, 1.8726685, 41.60678, 0.8983317, 1.5053959)
+size = Vector3(3.2474365, 1, 17.384735)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Entryway_Beach" unique_id=1573655821]
+transform = Transform3D(5.9094276, 0.33478492, 0, -2.0995417, 0.9422947, 0, 0, 0, 1.4594246, 28.18, 3.55, 1.505)
+size = Vector3(1.3706055, 1, 17.384735)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="Entryway_Beach" unique_id=1340895032]
+transform = Transform3D(1.0792247, 0, 0, 0, 0.999817, 0.012535057, 0, -0.0191292, 0.655164, 35.53457, 3.2776031, 17.760315)
+radius = 15.018
+height = 18.353
+sides = 12
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="Entryway_Beach" unique_id=1239319623]
+transform = Transform3D(1.0792247, 0, 0, 0, 0.9993139, -0.024270033, 0, 0.037037432, 0.65483433, 35.53457, 3.2776031, -15.811981)
+radius = 15.018
+height = 18.353
+sides = 12
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Entryway_Beach" unique_id=193621366]
+transform = Transform3D(5.793751, 0.38275704, 0, -2.4003897, 0.9238492, 0, 0, 0, 1.4594247, 22.007153, 5.8751335, 1.505)
+size = Vector3(0.81018066, 1, 17.384735)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Entryway_Beach" unique_id=20656357]
+transform = Transform3D(5.9886384, 0.29684678, 0, -1.8616195, 0.9549253, 0, 0, 0, 1.4594247, 15.6, 8.107, 1.505)
+size = Vector3(1.3706055, 1, 17.384735)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Entryway_Beach" unique_id=128705130]
+transform = Transform3D(6.181326, 0.16879937, 0, -1.0585939, 0.9856506, 0, 0, 0, 1.4594246, 4.964182, 10.495306, -0.24259162)
+size = Vector3(2.1344604, 1, 23.145134)
+
+[node name="CSGCylinder3D3" type="CSGCylinder3D" parent="Entryway_Beach" unique_id=2109261842]
+transform = Transform3D(1.1916388, 0, 0, 0, 1, 0, 0, 0, 0.6552839, 17.234264, 3.11489, 18.714088)
+radius = 16.625488
+height = 18.027575
+sides = 12
+
+[node name="CSGCylinder3D4" type="CSGCylinder3D" parent="Entryway_Beach" unique_id=1381315275]
+transform = Transform3D(1.0792247, 0, 0, 0, 0.99418986, 0.070535384, 0, -0.10764095, 0.6514766, 25.33588, 3.2776031, 17.760315)
+radius = 15.018
+height = 18.353
+sides = 12
+
+[node name="CSGCylinder3D5" type="CSGCylinder3D" parent="Entryway_Beach" unique_id=416399876]
+transform = Transform3D(1.0792247, 0, 0, 0, 0.9933722, -0.075319506, 0, 0.11494178, 0.65094084, 25.33588, 3.2776031, -16.309338)
+radius = 15.018
+height = 18.353
+sides = 12
+
+[node name="CSGCylinder3D6" type="CSGCylinder3D" parent="Entryway_Beach" unique_id=819335283]
+transform = Transform3D(1.3748817, 0, 0, 0, 1.0090764, 0, 0, 0, 0.6612315, 17.234264, 3.0776916, -19.132591)
+radius = 15.018
+height = 17.956774
+sides = 12
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="Entryway_Beach" unique_id=1821035163]
+transform = Transform3D(6.2713165, 0, 0, 0, 1, 0, 0, 0, 1.8726685, 43.496758, -0.58488226, 1.6327319)
+size = Vector3(3.850174, 1, 34.204826)
+
+[node name="Ocean" type="CSGBox3D" parent="." unique_id=587550531]
+transform = Transform3D(158.85822, 0, 0, 0, 0.095017135, 0, 0, 0, 153.68674, -60.07322, -23.126343, 22.090591)
+size = Vector3(5.695923, 498.0791, 5.2142334)
+
+[node name="Main Landmass" type="CSGCylinder3D" parent="." unique_id=1071587609]
+transform = Transform3D(1.0000825, 0, 0, 0, 1.0000825, 0, 0, 0, 1.0000825, -35.330917, 5.562256, 0)
+use_collision = true
+radius = 83.21045
+height = 13.124512
+sides = 24
+
+[node name="Cave Challenge TO BE FINISHED" type="CSGBox3D" parent="Main Landmass" unique_id=998637641]
+transform = Transform3D(0.9137639, -0.40604255, 0, 0.40604255, 0.9137639, 0, 0, 0, 0.9999175, -55.36904, 5.2699738, 9.910979)
+operation = 2
+size = Vector3(19.816166, 8.173584, 18.220581)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Main Landmass" unique_id=428651302]
+transform = Transform3D(56.710808, 0.35044283, 0, -21.219553, 0.9365841, 0, 0, 0, 1, 60.640358, 0.89822006, 0.39711)
+operation = 2
+size = Vector3(1.0477295, 17.889648, 32.44107)
+
+[node name="Data Center" type="CSGCombiner3D" parent="." unique_id=726086110]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Data Center" unique_id=1998629191]
+transform = Transform3D(2.9540126, 0, 0, 0, 0.5361675, 0, 0, 0, 3.4433558, -30.143358, 11.738035, 1.1528606)
+size = Vector3(7.4749756, 21.17028, 7.800171)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Data Center" unique_id=389931540]
+transform = Transform3D(2.9540126, 0, 0, 0, 0.5361675, 0, 0, 0, 3.443332, -30.330214, 14.710788, 1.4001845)
+size = Vector3(4.4976044, 22.354965, 11.765984)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Data Center" unique_id=1594980047]
+transform = Transform3D(2.8302133, 0, 0, 0, 0.5361675, 0, 0, 0, 3.3459854, -30.143358, 22.00532, 1.1528604)
+size = Vector3(7.4749756, 32.13669, 7.800171)
+
+[node name="Box_Entrance?" type="CSGBox3D" parent="Data Center" unique_id=1876030108]
+transform = Transform3D(1.6333637, 0, 0, 0, 0.73247594, 0, 0, 0, 1.8091578, -30.143358, 28.578112, 1.1528604)
+size = Vector3(7.4749756, 32.13669, 7.800171)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Data Center/Box_Entrance?" unique_id=1948210344]
+transform = Transform3D(0.86339426, 0, 0, 0, 1, 0, 0, 0, 0.87665445, 0, 0, 0)
+operation = 2
+size = Vector3(7.4749756, 32.13669, 7.800171)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Data Center" unique_id=2023971413]
+transform = Transform3D(1.607772, 0, 0, 0, 0.6160514, 0, 0, 0, 1.6704721, -30.143358, 22.00532, 1.1528604)
+operation = 2
+size = Vector3(7.4749756, 32.13669, 7.800171)
+
+[node name="Challenge1 Terrain" type="CSGCombiner3D" parent="." unique_id=162812681]
+transform = Transform3D(0.7375603, 0, 0, 0, 0.7405102, 0, 0, 0, 0.7504353, 0, 0, 0)
+use_collision = true
+
+[node name="Challenge1Cyl" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=2062970988]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, 10.114821, 16.065413, 60.197445)
+use_collision = true
+radius = 4.4711914
+height = 1.090332
+sides = 6
+
+[node name="Challenge1Cyl2" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=1856434113]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, 3.9844546, 17.125006, 56.257587)
+use_collision = true
+radius = 3.371582
+height = 2.4191895
+sides = 6
+
+[node name="Challenge1Cyl3" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=2121581007]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, 6.697883, 20.207558, 55.88807)
+use_collision = true
+radius = 2.5786133
+height = 0.028137207
+sides = 6
+
+[node name="Challenge1Cyl4" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=617357238]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, 5.759552, 22.198215, 52.658653)
+use_collision = true
+radius = 2.5786133
+height = 0.028137207
+sides = 6
+
+[node name="Challenge1Cyl5" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=42571610]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, 12.741325, 17.342188, 56.97299)
+use_collision = true
+radius = 2.5786133
+height = 0.028137207
+sides = 6
+
+[node name="Challenge1Cyl6" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=511326021]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, 3.9844546, 15.656072, 66.01853)
+use_collision = true
+radius = 2.5483398
+height = 2.4191895
+sides = 6
+
+[node name="Challenge1Cyl7" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=1973348698]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, -4.42264, 16.975594, 73.921555)
+use_collision = true
+radius = 2.5483398
+height = 2.4191895
+sides = 6
+
+[node name="Challenge1Cyl8" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=1451031969]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, -10.242381, 20.839363, 63.140198)
+use_collision = true
+radius = 2.5483398
+height = 3.8961182
+sides = 6
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Challenge1 Terrain/Challenge1Cyl8" unique_id=2106601799]
+transform = Transform3D(0.88147396, 0.31070378, -0.35562173, 2.0201842e-16, 0.17128646, 0.14965157, 0.47223258, -0.5799626, 0.6638069, 0.8182645, 1.7836165, -1.5272102)
+operation = 2
+size = Vector3(3.4267578, 2.249878, 6.219486)
+
+[node name="Challenge1Cyl9" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=1107145452]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, -9.701026, 22.198215, 64.13478)
+use_collision = true
+radius = 2.5786133
+height = 0.028137207
+sides = 6
+
+[node name="Challenge1Cyl10" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=1665202235]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, -9.629017, 23.834743, 61.816906)
+use_collision = true
+radius = 2.5786133
+height = 0.028137207
+sides = 6
+
+[node name="Challenge1Cyl11" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=683818514]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, -9.629017, 26.159254, 61.816906)
+use_collision = true
+radius = 2.5786133
+height = 0.028137207
+sides = 6
+
+[node name="Challenge1Cyl12" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=991259932]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, -9.629017, 28.514566, 61.816906)
+use_collision = true
+radius = 2.9501953
+height = 0.028137207
+sides = 6
+
+[node name="Challenge1Cyl13" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=1088414557]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.332561, 6.9991007, 17.109911, 64.0794)
+use_collision = true
+radius = 2.788086
+height = 0.028137207
+sides = 6
+
+[node name="Challenge1Cyl14" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=1705309824]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325661, -11.483659, 30.041203, 65.40451)
+use_collision = true
+radius = 2.5483398
+height = 0.79637146
+sides = 6
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Challenge1 Terrain/Challenge1Cyl14" unique_id=1287081604]
+transform = Transform3D(0.88147396, 0.31070378, -0.35562173, 2.0201842e-16, 0.17128646, 0.14965157, 0.47223258, -0.5799626, 0.6638069, 1.4665198, 0.14966822, -2.822403)
+operation = 2
+size = Vector3(3.4267578, 2.249878, 4.5400543)
+
+[node name="Challenge1Cyl15" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=2054464338]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325664, -11.483659, 14.859156, 65.4045)
+use_collision = true
+radius = 2.5483398
+height = 5.060051
+sides = 6
+
+[node name="Challenge1Cyl16" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=1738922032]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, -11.483659, 16.121647, 75.88553)
+use_collision = true
+radius = 2.5483398
+height = 5.4853363
+sides = 6
+
+[node name="Challenge1Cyl17" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=1532795473]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, -20.552074, 16.121647, 69.14611)
+use_collision = true
+radius = 2.5483398
+height = 5.4853363
+sides = 6
+
+[node name="Challenge1Cyl18" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=515292229]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, -20.552074, 16.121647, 80.27507)
+use_collision = true
+radius = 2.5483398
+height = 5.4853363
+sides = 6
+
+[node name="Challenge1Cyl19" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=1360813925]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, -11.483659, 16.121647, 85.196304)
+use_collision = true
+radius = 2.5483398
+height = 5.4853363
+sides = 6
+
+[node name="Challenge1Cyl20" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=496610302]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, -19.61651, 17.750732, 92.550644)
+use_collision = true
+radius = 4.6245117
+height = 5.4853363
+sides = 6
+
+[node name="Challenge1Cyl21" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=865010034]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, -19.61651, 19.740444, 92.550644)
+use_collision = true
+radius = 3.7172852
+height = 5.4853363
+sides = 6
+
+[node name="Challenge1Cyl22" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=968974093]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, -19.61651, 21.815908, 92.550644)
+use_collision = true
+radius = 3.1176758
+height = 5.4853363
+sides = 6
+
+[node name="Challenge1Cyl23" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=1625371451]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, -19.61651, 23.50385, 92.550644)
+use_collision = true
+radius = 2.6342773
+height = 5.4853363
+sides = 6
+
+[node name="Challenge1Cyl24" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=923674475]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, -19.61651, 24.925413, 92.550644)
+use_collision = true
+radius = 2.177246
+height = 5.4853363
+sides = 6
+
+[node name="Challenge1Cyl25" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=1484706224]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, 8.397037, 14.842818, 84.37278)
+use_collision = true
+radius = 2.5483398
+height = 2.4191895
+sides = 6
+
+[node name="Challenge1Cyl26" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=1636615196]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, 9.695831, 14.080564, 82.03554)
+use_collision = true
+radius = 2.5483398
+height = 2.4191895
+sides = 6
+
+[node name="Challenge1Cyl27" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=1729136927]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, 10.900552, 11.805962, 85.88819)
+use_collision = true
+radius = 2.5483398
+height = 2.4191895
+sides = 6
+
+[node name="Challenge1Cyl28" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=1381913305]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, 23.322601, 17.652782, 76.04394)
+use_collision = true
+radius = 2.5483398
+height = 2.4191895
+sides = 6
+
+[node name="Challenge1Cyl29" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=1560199809]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, 21.348057, 11.805962, 78.83598)
+use_collision = true
+radius = 2.5483398
+height = 2.4191895
+sides = 6
+
+[node name="Challenge1Cyl30" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=901929774]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, 22.001017, 16.042046, 72.70464)
+use_collision = true
+radius = 2.5483398
+height = 2.4191895
+sides = 6
+
+[node name="Challenge1Cyl31" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=390623072]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, 27.886602, 17.357225, 75.98102)
+use_collision = true
+radius = 2.5483398
+height = 2.4191895
+sides = 6
+
+[node name="Challenge1Cyl32" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=438388364]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, 11.670371, 17.342188, 83.18609)
+use_collision = true
+radius = 2.5786133
+height = 0.028137207
+sides = 6
+
+[node name="Challenge1Cyl33" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=532320388]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, 21.435682, 17.342188, 71.0801)
+use_collision = true
+radius = 2.5786133
+height = 0.028137207
+sides = 6
+
+[node name="Challenge1Cyl34" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=1430224972]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, 25.78039, 20.39951, 77.447716)
+use_collision = true
+radius = 2.5786133
+height = 0.028137207
+sides = 6
+
+[node name="Challenge1Cyl35" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=1023052030]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325601, 32.191418, 22.011982, 76.13757)
+use_collision = true
+radius = 2.5786133
+height = 0.028137207
+sides = 6
+
+[node name="Challenge1Cyl36" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=1669358459]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325602, 27.942505, 11.346077, 62.210735)
+use_collision = true
+radius = 2.5483398
+height = 2.4191895
+sides = 6
+
+[node name="Challenge1Cyl37" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=198717299]
+transform = Transform3D(1.3558214, 0, 0, 0, 5.9371524, 0, 0, 0, 1.3325604, 27.831528, 9.669887, 58.03198)
+use_collision = true
+radius = 2.5483398
+height = 2.4191895
+sides = 6
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Challenge1 Terrain" unique_id=83153273]
+transform = Transform3D(0.6624467, 0.14901881, -0.7341441, -0.20385915, 0.9788892, 0.014748032, 0.72083867, 0.13989052, 0.67884964, 1.7597184, 23.038965, 79.39255)
+size = Vector3(11.626556, 0.042236328, 1)
+
+[node name="Climb out challenge TO BE FINISHED" type="CSGCombiner3D" parent="." unique_id=1939240954]
+transform = Transform3D(0.7375603, 0, 0, 0, 0.7405102, 0, 0, 0, 0.7504353, 0, 0, 0)
+use_collision = true
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="Climb out challenge TO BE FINISHED" unique_id=1860950239]
+transform = Transform3D(10.535092, 0, 0, 0, 12.556281, 0, 0, 0, 10.847048, -91.884254, 14.525702, -56.018093)
+use_collision = true
+polygon = PackedVector2Array(3.2970796, 0.050171018, 1.007884, 0.47061205, 1.025507, 1.4728819, 1.8993509, 0.9783641)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 24
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="Climb out challenge TO BE FINISHED" unique_id=270145499]
+transform = Transform3D(-1.4408741, 0, 0, 0, 1, 0, 0, 0, -1.6111498, -88.93798, -1.9337887, -56.446396)
+radius = 14.509277
+height = 44.88571
+
+[node name="TO BE EDITED" type="CSGCombiner3D" parent="." unique_id=1950791744]
+use_collision = true
+
+[node name="Small House or Delivery Structure" type="CSGBox3D" parent="TO BE EDITED" unique_id=2000220700]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1496544, 16.056747, -51.212635)
+size = Vector3(12.2583065, 8.173584, 18.220581)
+
+[node name="Floating Platforms Challenge TO BE FINISHED" type="CSGBox3D" parent="TO BE EDITED" unique_id=195702285]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -69.70389, 28.637535, 42.716244)
+size = Vector3(12.2583065, 1.7224121, 18.220581)
+
+[node name="Islet" type="CSGPolygon3D" parent="TO BE EDITED" unique_id=411973952]
+transform = Transform3D(10.535092, 0, 0, 0, 12.556281, 0, 0, 0, 10.847048, 63.234364, -14.586263, -9.995996)
+use_collision = true
+polygon = PackedVector2Array(0.8905082, 1.1541095, 0.02316761, 0.9750364, -0.0028390884, 1.4353493, 0.5815482, 1.3510902)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 12
+
+[node name="Islet2" type="CSGPolygon3D" parent="TO BE EDITED" unique_id=2001100091]
+transform = Transform3D(5.4214706, 0, 0, 0, 12.556281, 0, 0, 0, 5.810228, 49.080265, -16.492037, -9.995996)
+use_collision = true
+polygon = PackedVector2Array(0.8905082, 1.1541095, 0.02316761, 0.9750364, -0.0028390884, 1.4353493, 0.5815482, 1.3510902)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 12
+
+[node name="Islet3" type="CSGPolygon3D" parent="TO BE EDITED" unique_id=1283821450]
+transform = Transform3D(8.702486, 0, 0, 0, 12.556281, 0, 0, 0, 8.2288475, 84.05464, -14.586263, -22.541676)
+use_collision = true
+polygon = PackedVector2Array(0.8905082, 1.1541095, 0.02316761, 0.9750364, -0.0028390884, 1.4353493, 0.5815482, 1.3510902)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 12
+
+[node name="Islet4" type="CSGPolygon3D" parent="TO BE EDITED" unique_id=1785858432]
+transform = Transform3D(17.761284, 0, 0, 0, 12.556281, 0, 0, 0, 14.546577, 102.76554, -15.887567, -40.987045)
+use_collision = true
+polygon = PackedVector2Array(0.8905082, 1.1541095, 0.02316761, 0.9750364, -0.0028390884, 1.4353493, 0.5815482, 1.3510902)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 12
+
+[node name="Islet5" type="CSGPolygon3D" parent="TO BE EDITED" unique_id=1857741190]
+transform = Transform3D(8.702486, 0, 0, 0, 12.556281, 0, 0, 0, 11.9463625, 126.22777, -14.586263, -21.845816)
+use_collision = true
+polygon = PackedVector2Array(0.8905082, 1.1541095, 0.02316761, 0.9750364, -0.0028390884, 1.4353493, 0.5815482, 1.3510902)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 12
+
+[node name="Islet6" type="CSGPolygon3D" parent="TO BE EDITED" unique_id=430040542]
+transform = Transform3D(6.6511383, 0, 0, 0, 12.556281, 0, 0, 0, 8.2288475, 124.069, -14.586263, -59.915535)
+use_collision = true
+polygon = PackedVector2Array(0.8905082, 1.1541095, 0.02316761, 0.9750364, -0.0028390884, 1.4353493, 0.5815482, 1.3510902)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 12
+
+[node name="Islet7" type="CSGPolygon3D" parent="TO BE EDITED" unique_id=525738052]
+transform = Transform3D(6.6755753, 0, 0, 0, 12.556281, 0, 0, 0, 6.9830647, 148.22476, -16.383171, -17.95857)
+use_collision = true
+polygon = PackedVector2Array(0.8905082, 1.1541095, 0.02316761, 0.9750364, -0.0028390884, 1.4353493, 0.5815482, 1.3510902)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 12
+
+[node name="Islet8" type="CSGPolygon3D" parent="TO BE EDITED" unique_id=1218840738]
+transform = Transform3D(8.702486, 0, 0, 0, 12.556281, 0, 0, 0, 11.9463625, 144.78653, -14.586259, -49.587814)
+use_collision = true
+polygon = PackedVector2Array(0.8905082, 1.1541095, 0.02316761, 0.9750364, -0.0028390884, 1.4353493, 0.5815482, 1.3510902)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 12
+
+[node name="Islet9" type="CSGPolygon3D" parent="TO BE EDITED" unique_id=565736683]
+transform = Transform3D(6.6755753, 0, 0, 0, 12.556281, 0, 0, 0, 6.9830647, 163.45628, -14.586263, -28.505817)
+use_collision = true
+polygon = PackedVector2Array(0.8905082, 1.1541095, 0.02316761, 0.9750364, -0.0028390884, 1.4353493, 0.5815482, 1.3510902)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 12
+
+[node name="Islet10" type="CSGPolygon3D" parent="TO BE EDITED" unique_id=70584799]
+transform = Transform3D(6.6511383, 0, 0, 0, 12.556281, 0, 0, 0, 8.2288475, 160.81133, -15.811856, -33.922688)
+use_collision = true
+polygon = PackedVector2Array(0.8905082, 1.1541095, 0.02316761, 0.9750364, -0.0028390884, 1.4353493, 0.5815482, 1.3510902)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 12
+
+[node name="Islet11" type="CSGPolygon3D" parent="TO BE EDITED" unique_id=1257801173]
+transform = Transform3D(8.702486, 0, 0, 0, 12.556281, 0, 0, 0, 11.9463625, 97.57542, -14.586263, -49.76136)
+use_collision = true
+polygon = PackedVector2Array(0.8905082, 1.1541095, 0.02316761, 0.9750364, -0.0028390884, 1.4353493, 0.5815482, 1.3510902)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 12
+
+[node name="Islet12" type="CSGPolygon3D" parent="TO BE EDITED" unique_id=1556946937]
+transform = Transform3D(8.061435, 0, 0, 0, 13.294108, 0, 0, 0, 6.9830647, 183.16508, -17.20825, -28.505817)
+use_collision = true
+polygon = PackedVector2Array(0.8905082, 1.1541095, 0.02316761, 0.9750364, -0.0028390884, 1.4353493, 0.5815482, 1.3510902)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 12
+
+[node name="Islet13" type="CSGPolygon3D" parent="TO BE EDITED" unique_id=1174407318]
+transform = Transform3D(8.061435, 0, 0, 0, 11.927696, 0, 0, 0, 11.374916, 204.04732, -14.586263, -33.300377)
+use_collision = true
+polygon = PackedVector2Array(0.8905082, 1.1541095, 0.02316761, 0.9750364, -0.0028390884, 1.4353493, 0.5815482, 1.3510902)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 12
+
+[node name="Islet14" type="CSGPolygon3D" parent="TO BE EDITED" unique_id=741110605]
+transform = Transform3D(16.777319, 0, 0, 0, 12.644058, 0, 0, 0, 30.89939, 234.31772, -14.586263, -52.375546)
+use_collision = true
+polygon = PackedVector2Array(0.8905082, 1.1541095, 0.02316761, 0.9750364, -0.0028390884, 1.4353493, 0.5815482, 1.3510902)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 12
+
+[node name="Islet15" type="CSGPolygon3D" parent="TO BE EDITED" unique_id=278910399]
+transform = Transform3D(8.702486, 0, 0, 0, 12.556281, 0, 0, 0, 20.289696, 225.877, -14.586259, -64.75934)
+use_collision = true
+polygon = PackedVector2Array(0.8905082, 1.1541095, 0.02316761, 0.9750364, -0.0028390884, 1.4353493, 0.5815482, 1.3510902)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 12
+
+[node name="Islet16" type="CSGPolygon3D" parent="TO BE EDITED" unique_id=1187627556]
+transform = Transform3D(8.702486, 0, 0, 0, 12.556281, 0, 0, 0, 12.758481, 244.96489, -14.586259, -47.081303)
+use_collision = true
+polygon = PackedVector2Array(0.8905082, 1.1541095, 0.02316761, 0.9750364, -0.0028390884, 1.4353493, 0.5815482, 1.3510902)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 12
+
+[node name="Islet17" type="CSGPolygon3D" parent="TO BE EDITED" unique_id=501702707]
+transform = Transform3D(6.4279904, 0, 0, 0, 12.556281, 0, 0, 0, 9.73853, 242.3301, -14.586259, -59.079742)
+use_collision = true
+polygon = PackedVector2Array(0.8905082, 1.1541095, 0.02316761, 0.9750364, -0.0028390884, 1.4353493, 0.5815482, 1.3510902)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 12
+
+[node name="Islet18" type="CSGPolygon3D" parent="TO BE EDITED" unique_id=620321417]
+transform = Transform3D(1.7235214, 0, 0, 0, 12.369575, 0, 0, 0, 3.323139, 73.02691, -16.761696, -18.566671)
+use_collision = true
+polygon = PackedVector2Array(1.389122, 1.2627879, 0.02316761, 0.9750364, -0.0028390884, 1.4353493, 0.73119736, 1.4114239)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 12
+
+[node name="Islet19" type="CSGPolygon3D" parent="TO BE EDITED" unique_id=1968209618]
+transform = Transform3D(1.7235214, 0, 0, 0, 12.369575, 0, 0, 0, 3.323139, 88.380936, -16.761696, -33.823177)
+use_collision = true
+polygon = PackedVector2Array(1.389122, 1.2627879, 0.02316761, 0.9750364, -0.0028390884, 1.4353493, 0.73119736, 1.4114239)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 12
+
+[node name="Islet20" type="CSGPolygon3D" parent="TO BE EDITED" unique_id=1989230727]
+transform = Transform3D(1.7235214, 0, 0, 0, 12.369575, 0, 0, 0, 2.283252, 115.61593, -16.761696, -32.208992)
+use_collision = true
+polygon = PackedVector2Array(1.389122, 1.2627879, 0.02316761, 0.9750364, -0.0028390884, 1.4353493, 0.73119736, 1.4114239)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 12
+
+[node name="Islet21" type="CSGPolygon3D" parent="TO BE EDITED" unique_id=293197154]
+transform = Transform3D(1.7235214, 0, 0, 0, 12.369575, 0, 0, 0, 2.283252, 117.15847, -16.761696, -50.986355)
+use_collision = true
+polygon = PackedVector2Array(1.389122, 1.2627879, 0.02316761, 0.9750364, -0.0028390884, 1.4353493, 0.73119736, 1.4114239)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 12
+
+[node name="Islet22" type="CSGPolygon3D" parent="TO BE EDITED" unique_id=501803821]
+transform = Transform3D(1.7235214, 0, 0, 0, 12.369575, 0, 0, 0, 2.283252, 121.56955, -16.761696, -49.721714)
+use_collision = true
+polygon = PackedVector2Array(1.389122, 1.2627879, 0.02316761, 0.9750364, -0.0028390884, 1.4353493, 0.73119736, 1.4114239)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 12
+
+[node name="Islet23" type="CSGPolygon3D" parent="TO BE EDITED" unique_id=1624918076]
+transform = Transform3D(1.7235214, 0, 0, 0, 12.369575, 0, 0, 0, 2.283252, 132.9848, -16.761696, -54.49091)
+use_collision = true
+polygon = PackedVector2Array(1.389122, 1.2627879, 0.02316761, 0.9750364, -0.0028390884, 1.4353493, 0.73119736, 1.4114239)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 12
+
+[node name="Islet24" type="CSGPolygon3D" parent="TO BE EDITED" unique_id=1672253161]
+transform = Transform3D(1.7235214, 0, 0, 0, 12.369575, 0, 0, 0, 2.283252, 154.65822, -16.761696, -39.91832)
+use_collision = true
+polygon = PackedVector2Array(1.389122, 1.2627879, 0.02316761, 0.9750364, -0.0028390884, 1.4353493, 0.73119736, 1.4114239)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 12
+
+[node name="Islet25" type="CSGPolygon3D" parent="TO BE EDITED" unique_id=941212554]
+transform = Transform3D(1.7235214, 0, 0, 0, 12.369575, 0, 0, 0, 2.283252, 138.75752, -16.761696, -19.447361)
+use_collision = true
+polygon = PackedVector2Array(1.389122, 1.2627879, 0.02316761, 0.9750364, -0.0028390884, 1.4353493, 0.73119736, 1.4114239)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 12
+
+[node name="Islet26" type="CSGPolygon3D" parent="TO BE EDITED" unique_id=1879372761]
+transform = Transform3D(1.7235214, 0, 0, 0, 12.369575, 0, 0, 0, 2.283252, 154.28676, -16.761696, -24.38194)
+use_collision = true
+polygon = PackedVector2Array(1.389122, 1.2627879, 0.02316761, 0.9750364, -0.0028390884, 1.4353493, 0.73119736, 1.4114239)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 12
+
+[node name="Islet27" type="CSGPolygon3D" parent="TO BE EDITED" unique_id=838761121]
+transform = Transform3D(1.7235214, 0, 0, 0, 12.369575, 0, 0, 0, 2.283252, 156.93654, -16.761696, -20.844866)
+use_collision = true
+polygon = PackedVector2Array(1.389122, 1.2627879, 0.02316761, 0.9750364, -0.0028390884, 1.4353493, 0.73119736, 1.4114239)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 12
+
+[node name="Islet28" type="CSGPolygon3D" parent="TO BE EDITED" unique_id=1151923954]
+transform = Transform3D(1.7235214, 0, 0, 0, 12.369575, 0, 0, 0, 2.283252, 174.43878, -16.761696, -26.518913)
+use_collision = true
+polygon = PackedVector2Array(1.389122, 1.2627879, 0.02316761, 0.9750364, -0.0028390884, 1.4353493, 0.73119736, 1.4114239)
+mode = 1
+spin_degrees = 360.0
+spin_sides = 12
