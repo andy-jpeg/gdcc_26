@@ -25,18 +25,13 @@ var coins = 0
 @onready var model = $Character
 @onready var animation = $Character/AnimationPlayer
 
-# Functions
-
 func _physics_process(delta):
-
-	# Handle functions
-
 	handle_controls(delta)
 	handle_gravity(delta)
 
 	handle_effects(delta)
 
-	# Movement
+	# movement
 
 	var applied_velocity: Vector3
 
@@ -46,23 +41,23 @@ func _physics_process(delta):
 	velocity = applied_velocity
 	move_and_slide()
 
-	# Rotation
+	# rotation
 
 	if Vector2(velocity.z, velocity.x).length() > 0:
 		rotation_direction = Vector2(velocity.z, velocity.x).angle()
 
 	rotation.y = lerp_angle(rotation.y, rotation_direction, delta * 10)
 
-	# Falling/respawning
+	# falling / respawning
 
 	if position.y < -10:
 		get_tree().reload_current_scene()
 
-	# Animation for scale (jumping and landing)
+	# animation for scale (jumping and landing)
 
 	model.scale = model.scale.lerp(Vector3(1, 1, 1), delta * 10)
 
-	# Animation when landing
+	# animation when landing
 
 	if is_on_floor() and gravity > 2 and !previously_floored:
 		model.scale = Vector3(1.25, 0.75, 1.25)

@@ -16,6 +16,8 @@
 [ext_resource type="Texture2D" uid="uid://cd7oyc56ehkx1" path="res://sprites/coin.png" id="13_jfda3"]
 [ext_resource type="FontFile" uid="uid://d0cxd77jybrcn" path="res://fonts/lilita_one_regular.ttf" id="17_tk810"]
 
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_ow34m"]
+
 [sub_resource type="LabelSettings" id="LabelSettings_38ys3"]
 font = ExtResource("17_tk810")
 font_size = 48
@@ -39,6 +41,7 @@ target = NodePath("../Player")
 
 [node name="Camera" type="Camera3D" parent="View" unique_id=633486034]
 transform = Transform3D(0.7183239, 0.23702568, -0.65408653, -0.29401916, 0.955514, 0.023361415, 0.6305268, 0.1755327, 0.7560593, -4.7988873, 1.6283867, 6.507924)
+attributes = SubResource("CameraAttributesPractical_ow34m")
 current = true
 fov = 40.0
 
@@ -183,7 +186,87 @@ size_flags_horizontal = 8
 size_flags_vertical = 8
 script = ExtResource("11_apvpm")
 
+[node name="Title" type="Label" parent="HUD" unique_id=802860520]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.0640625
+anchor_top = 0.043055557
+anchor_right = 0.065625
+anchor_bottom = 0.09027782
+offset_left = 350.0
+offset_top = 96.0
+offset_right = 929.0
+offset_bottom = 209.99997
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = ExtResource("17_tk810")
+theme_override_font_sizes/font_size = 128
+text = "> shello world"
+metadata/_edit_use_anchors_ = true
+
+[node name="Play" type="Button" parent="HUD/Title" unique_id=2144026370]
+layout_mode = 0
+offset_left = -96.0
+offset_top = 256.0
+offset_right = 202.0
+offset_bottom = 410.0
+theme_override_fonts/font = ExtResource("17_tk810")
+theme_override_font_sizes/font_size = 96
+flat = true
+
+[node name="Text" type="Label" parent="HUD/Title/Play" unique_id=574353983]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.30216777
+anchor_top = 0.022038968
+anchor_right = 1.2751678
+anchor_bottom = 0.95503896
+offset_left = -7.0460005
+offset_top = -6.394003
+offset_bottom = -0.07600403
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = ExtResource("17_tk810")
+theme_override_font_sizes/font_size = 96
+text = "play"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Credits" type="Button" parent="HUD/Title" unique_id=1223938058]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 255.0
+offset_right = 688.0
+offset_bottom = 409.0
+theme_override_fonts/font = ExtResource("17_tk810")
+theme_override_font_sizes/font_size = 96
+flat = true
+
+[node name="Text" type="Label" parent="HUD/Title/Credits" unique_id=585077135]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.2383402
+anchor_top = 0.022038968
+anchor_right = 1.2113402
+anchor_bottom = 0.95503896
+offset_left = -7.0460005
+offset_top = -6.394003
+offset_bottom = -0.07600403
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = ExtResource("17_tk810")
+theme_override_font_sizes/font_size = 96
+text = "credits"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
 [node name="Icon" type="TextureRect" parent="HUD" unique_id=324443277]
+visible = false
 layout_mode = 0
 offset_left = 57.0
 offset_top = 67.0
@@ -193,6 +276,7 @@ scale = Vector2(0.2, 0.2)
 texture = ExtResource("13_jfda3")
 
 [node name="x" type="Label" parent="HUD" unique_id=338098599]
+visible = false
 layout_mode = 0
 offset_left = 112.0
 offset_top = 64.0
@@ -203,12 +287,14 @@ label_settings = SubResource("LabelSettings_38ys3")
 metadata/_edit_use_anchors_ = true
 
 [node name="Coins" type="Label" parent="HUD" unique_id=291988079]
+visible = false
 layout_mode = 0
 offset_left = 144.0
 offset_top = 64.0
 offset_right = 368.0
 offset_bottom = 123.0
-text = "0"
+text = "0
+"
 label_settings = SubResource("LabelSettings_38ys3")
 metadata/_edit_use_anchors_ = true
 

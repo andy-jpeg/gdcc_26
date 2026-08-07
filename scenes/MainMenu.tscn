@@ -1,0 +1,120 @@
+[gd_scene format=3 uid="uid://wfy1a6wtjudx"]
+
+[ext_resource type="Shader" uid="uid://densy1suso7mm" path="res://shaders/blur.gdshader" id="2_kp2vr"]
+[ext_resource type="PackedScene" uid="uid://bqqgyqafm7xwp" path="res://scenes/main.tscn" id="3_3b3s2"]
+
+[sub_resource type="GDScript" id="GDScript_0ykhv"]
+script/source = "extends Control
+
+@onready var env: Environment = $Environment.environment
+@onready var play_button: Button = $VBoxContainer/PlayButton
+@onready var menu_box: VBoxContainer = $VBoxContainer
+
+func _ready() -> void:
+	env.dof_blur_far_enabled = true
+	env.dof_blur_far_amount = 1.0
+	play_button.pressed.connect(_on_play_pressed)
+
+func _on_play_pressed() -> void:
+	play_button.disabled = true
+	var tween := create_tween().set_parallel(true)
+	tween.tween_property(env, \"dof_blur_far_amount\", 0.0, 0.8)
+	tween.tween_property(menu_box, \"position:y\", menu_box.position.y - 400, 0.8)\\
+		 .set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_OUT)
+	tween.chain().tween_callback(_start_game)
+
+func _start_game() -> void:
+	hide()
+	get_tree().paused = false
+	
+	# enable player input/camera here
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4x3q5"]
+render_priority = 0
+shader = ExtResource("2_kp2vr")
+
+[node name="MainMenu" type="Control" unique_id=1142182716]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = SubResource("GDScript_0ykhv")
+
+[node name="Background" type="SubViewportContainer" parent="." unique_id=394764237]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="Background" unique_id=1355220070]
+handle_input_locally = false
+size = Vector2i(1280, 720)
+render_target_update_mode = 4
+
+[node name="MainScene" parent="Background/SubViewport" unique_id=1089863677 instance=ExtResource("3_3b3s2")]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=855779176]
+layer = 2
+
+[node name="BlurRect" type="ColorRect" parent="CanvasLayer" unique_id=173811753]
+unique_name_in_owner = true
+material = SubResource("ShaderMaterial_4x3q5")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.1)
+
+[node name="MenuUI" type="Control" parent="CanvasLayer" unique_id=475900916]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MenuUI#ContentContainer" type="VBoxContainer" parent="." unique_id=362810101]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -120.0
+offset_top = -120.0
+offset_right = 120.0
+offset_bottom = 120.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="ContentContainer#TitleLabel" type="Label" parent="." unique_id=43696185]
+unique_name_in_owner = true
+layout_mode = 0
+text = "Shello World"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ContentContainer#PlayButton" type="Button" parent="." unique_id=518521576]
+unique_name_in_owner = true
+layout_mode = 0
+text = "Play"
+
+[node name="ContentContainer#OptionsButton" type="Button" parent="." unique_id=902471767]
+unique_name_in_owner = true
+layout_mode = 0
+text = "Options"
+
+[node name="ContentContainer#QuitButton" type="Button" parent="." unique_id=1859923255]
+unique_name_in_owner = true
+layout_mode = 0
+text = "Quit"
