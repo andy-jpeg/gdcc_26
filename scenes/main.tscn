@@ -207,24 +207,18 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Play" type="Button" parent="HUD/Title" unique_id=2144026370]
 layout_mode = 0
-offset_left = -96.0
-offset_top = 256.0
-offset_right = 202.0
-offset_bottom = 410.0
+offset_left = 21.0
+offset_top = 257.0
+offset_right = 319.0
+offset_bottom = 411.0
 theme_override_fonts/font = ExtResource("17_tk810")
 theme_override_font_sizes/font_size = 96
 flat = true
 
-[node name="Text" type="Label" parent="HUD/Title/Play" unique_id=574353983]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.30216777
-anchor_top = 0.022038968
-anchor_right = 1.2751678
-anchor_bottom = 0.95503896
-offset_left = -7.0460005
-offset_top = -6.394003
-offset_bottom = -0.07600403
+[node name="Label" type="Label" parent="HUD/Title/Play" unique_id=856763334]
+layout_mode = 0
+offset_right = 298.0
+offset_bottom = 154.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
@@ -233,28 +227,21 @@ theme_override_font_sizes/font_size = 96
 text = "play"
 horizontal_alignment = 1
 vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
 
-[node name="Credits" type="Button" parent="HUD/Title" unique_id=1223938058]
+[node name="Credits" type="Button" parent="HUD/Title" unique_id=1260649701]
 layout_mode = 0
-offset_left = 300.0
-offset_top = 255.0
-offset_right = 688.0
-offset_bottom = 409.0
+offset_left = 389.0
+offset_top = 257.0
+offset_right = 789.0
+offset_bottom = 411.0
 theme_override_fonts/font = ExtResource("17_tk810")
 theme_override_font_sizes/font_size = 96
 flat = true
 
-[node name="Text" type="Label" parent="HUD/Title/Credits" unique_id=585077135]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.2383402
-anchor_top = 0.022038968
-anchor_right = 1.2113402
-anchor_bottom = 0.95503896
-offset_left = -7.0460005
-offset_top = -6.394003
-offset_bottom = -0.07600403
+[node name="Label" type="Label" parent="HUD/Title/Credits" unique_id=1800672078]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 154.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
@@ -263,7 +250,6 @@ theme_override_font_sizes/font_size = 96
 text = "credits"
 horizontal_alignment = 1
 vertical_alignment = 1
-metadata/_edit_use_anchors_ = true
 
 [node name="Icon" type="TextureRect" parent="HUD" unique_id=324443277]
 visible = false
@@ -292,10 +278,75 @@ layout_mode = 0
 offset_left = 144.0
 offset_top = 64.0
 offset_right = 368.0
-offset_bottom = 123.0
+offset_bottom = 179.0
 text = "0
 "
 label_settings = SubResource("LabelSettings_38ys3")
 metadata/_edit_use_anchors_ = true
+
+[node name="Credits" type="Label" parent="HUD" unique_id=1265121]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.3162813
+anchor_top = 0.17472228
+anchor_right = 1.8772814
+anchor_bottom = 0.38072237
+offset_left = -26.840088
+offset_top = 0.19995117
+offset_right = 0.079833984
+offset_bottom = -0.12011719
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = ExtResource("17_tk810")
+theme_override_font_sizes/font_size = 128
+text = "credits"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Body" type="Label" parent="HUD/Credits" unique_id=1035025057]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.29432216
+anchor_top = 1.2367839
+anchor_right = 1.3476778
+anchor_bottom = 3.405622
+offset_left = 0.27000427
+offset_top = -0.044006348
+offset_right = -0.020019531
+offset_bottom = -0.032043457
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = ExtResource("17_tk810")
+theme_override_font_sizes/font_size = 80
+text = "andy - programming & ui
+beddien - envi assets, level design
+cypher - 2d/3d models"
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Back" type="Button" parent="HUD/Credits" unique_id=1357714122]
+layout_mode = 0
+offset_left = -271.0
+offset_top = -90.99999
+offset_right = 27.0
+offset_bottom = 63.000008
+theme_override_fonts/font = ExtResource("17_tk810")
+theme_override_font_sizes/font_size = 96
+flat = true
+
+[node name="Label" type="Label" parent="HUD/Credits/Back" unique_id=624379885]
+layout_mode = 0
+offset_right = 298.0
+offset_bottom = 154.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = ExtResource("17_tk810")
+theme_override_font_sizes/font_size = 80
+text = "> back"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]
