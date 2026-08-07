@@ -110,42 +110,30 @@ func handle_controls(delta):
 
 	var input := Vector3.ZERO
 
-	input.x = Input.get_axis("move_left", "move_right")
-	input.z = Input.get_axis("move_forward", "move_back")
+	input.x = Input.get_axis("move_right", "move_left")
+	input.z = Input.get_axis("move_back", "move_forward")
 
-	input = input.rotated(Vector3.UP, view.rotation.y)
+	input = input.rotated(Vector3.UP, deg_to_rad(180))
 
 	if input.length() > 1:
 		input = input.normalized()
 
 	movement_velocity = input * movement_speed * delta
 
-	# Jumping
-
 	if Input.is_action_just_pressed("jump"):
-
 		if jump_single or jump_double:
 			jump()
 
-# Handle gravity
-
 func handle_gravity(delta):
-
 	gravity += 25 * delta
 
 	if gravity > 0 and is_on_floor():
-
 		jump_single = true
 		gravity = 0
 
-# Jumping
-
 func jump():
-
 	Audio.play("res://sounds/jump.ogg")
-
 	gravity = -jump_strength
-
 	model.scale = Vector3(0.5, 1.5, 0.5)
 
 	if jump_single:
@@ -154,10 +142,6 @@ func jump():
 	else:
 		jump_double = false;
 
-# Collecting coins
-
 func collect_coin():
-
 	coins += 1
-
 	coin_collected.emit(coins)
