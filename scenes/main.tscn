@@ -21,7 +21,7 @@ shadow_offset = Vector2(2, 2)
 script = ExtResource("1_jkv2x")
 
 [node name="Exterior_Terrain" parent="." unique_id=370708302 instance=ExtResource("3_tipki")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.045522153, 0.5616859, 0.006015897)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.04649836, 0.5600616, 0.0050965548)
 
 [node name="Environment" type="WorldEnvironment" parent="." unique_id=1606659274]
 environment = ExtResource("1_ahusb")

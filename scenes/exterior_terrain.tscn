@@ -8,66 +8,79 @@ use_collision = true
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="Entryway_Beach" unique_id=802900918]
 transform = Transform3D(6.2066393, 0.14324814, 0, -0.8983542, 0.9896869, 0, 0, 0, 1.8726685, 41.60678, 0.8983317, 1.5053959)
+use_collision = true
 size = Vector3(3.2474365, 1, 17.384735)
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="Entryway_Beach" unique_id=1573655821]
 transform = Transform3D(5.9094276, 0.33478492, 0, -2.0995417, 0.9422947, 0, 0, 0, 1.4594246, 28.18, 3.55, 1.505)
+use_collision = true
 size = Vector3(1.3706055, 1, 17.384735)
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="Entryway_Beach" unique_id=1340895032]
 transform = Transform3D(1.0792247, 0, 0, 0, 0.999817, 0.012535057, 0, -0.0191292, 0.655164, 35.53457, 3.2776031, 17.760315)
+use_collision = true
 radius = 15.018
 height = 18.353
 sides = 12
 
 [node name="CSGCylinder3D2" type="CSGCylinder3D" parent="Entryway_Beach" unique_id=1239319623]
 transform = Transform3D(1.0792247, 0, 0, 0, 0.9993139, -0.024270033, 0, 0.037037432, 0.65483433, 35.53457, 3.2776031, -15.811981)
+use_collision = true
 radius = 15.018
 height = 18.353
 sides = 12
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="Entryway_Beach" unique_id=193621366]
 transform = Transform3D(5.793751, 0.38275704, 0, -2.4003897, 0.9238492, 0, 0, 0, 1.4594247, 22.007153, 5.8751335, 1.505)
+use_collision = true
 size = Vector3(0.81018066, 1, 17.384735)
 
 [node name="CSGBox3D5" type="CSGBox3D" parent="Entryway_Beach" unique_id=20656357]
 transform = Transform3D(5.9886384, 0.29684678, 0, -1.8616195, 0.9549253, 0, 0, 0, 1.4594247, 15.6, 8.107, 1.505)
+use_collision = true
 size = Vector3(1.3706055, 1, 17.384735)
 
 [node name="CSGBox3D6" type="CSGBox3D" parent="Entryway_Beach" unique_id=128705130]
 transform = Transform3D(6.181326, 0.16879937, 0, -1.0585939, 0.9856506, 0, 0, 0, 1.4594246, 4.964182, 10.495306, -0.24259162)
+use_collision = true
 size = Vector3(2.1344604, 1, 23.145134)
 
 [node name="CSGCylinder3D3" type="CSGCylinder3D" parent="Entryway_Beach" unique_id=2109261842]
 transform = Transform3D(1.1916388, 0, 0, 0, 1, 0, 0, 0, 0.6552839, 17.234264, 3.11489, 18.714088)
+use_collision = true
 radius = 16.625488
 height = 18.027575
 sides = 12
 
 [node name="CSGCylinder3D4" type="CSGCylinder3D" parent="Entryway_Beach" unique_id=1381315275]
 transform = Transform3D(1.0792247, 0, 0, 0, 0.99418986, 0.070535384, 0, -0.10764095, 0.6514766, 25.33588, 3.2776031, 17.760315)
+use_collision = true
 radius = 15.018
 height = 18.353
 sides = 12
 
 [node name="CSGCylinder3D5" type="CSGCylinder3D" parent="Entryway_Beach" unique_id=416399876]
 transform = Transform3D(1.0792247, 0, 0, 0, 0.9933722, -0.075319506, 0, 0.11494178, 0.65094084, 25.33588, 3.2776031, -16.309338)
+use_collision = true
 radius = 15.018
 height = 18.353
 sides = 12
 
 [node name="CSGCylinder3D6" type="CSGCylinder3D" parent="Entryway_Beach" unique_id=819335283]
 transform = Transform3D(1.3748817, 0, 0, 0, 1.0090764, 0, 0, 0, 0.6612315, 17.234264, 3.0776916, -19.132591)
+use_collision = true
 radius = 15.018
 height = 17.956774
 sides = 12
 
 [node name="CSGBox3D7" type="CSGBox3D" parent="Entryway_Beach" unique_id=1821035163]
 transform = Transform3D(6.2713165, 0, 0, 0, 1, 0, 0, 0, 1.8726685, 43.496758, -0.58488226, 1.6327319)
+use_collision = true
 size = Vector3(3.850174, 1, 34.204826)
 
 [node name="Ocean" type="CSGBox3D" parent="." unique_id=587550531]
 transform = Transform3D(158.85822, 0, 0, 0, 0.095017135, 0, 0, 0, 153.68674, -60.07322, -23.126343, 22.090591)
+use_collision = true
 size = Vector3(5.695923, 498.0791, 5.2142334)
 
 [node name="Main Landmass" type="CSGCylinder3D" parent="." unique_id=1071587609]
@@ -80,39 +93,48 @@ sides = 24
 [node name="Cave Challenge TO BE FINISHED" type="CSGBox3D" parent="Main Landmass" unique_id=998637641]
 transform = Transform3D(0.9137639, -0.40604255, 0, 0.40604255, 0.9137639, 0, 0, 0, 0.9999175, -55.36904, 5.2699738, 9.910979)
 operation = 2
+use_collision = true
 size = Vector3(19.816166, 8.173584, 18.220581)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Main Landmass" unique_id=428651302]
 transform = Transform3D(56.710808, 0.35044283, 0, -21.219553, 0.9365841, 0, 0, 0, 1, 60.640358, 0.89822006, 0.39711)
 operation = 2
+use_collision = true
 size = Vector3(1.0477295, 17.889648, 32.44107)
 
 [node name="Data Center" type="CSGCombiner3D" parent="." unique_id=726086110]
+use_collision = true
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Data Center" unique_id=1998629191]
 transform = Transform3D(2.9540126, 0, 0, 0, 0.5361675, 0, 0, 0, 3.4433558, -30.143358, 11.738035, 1.1528606)
+use_collision = true
 size = Vector3(7.4749756, 21.17028, 7.800171)
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="Data Center" unique_id=389931540]
 transform = Transform3D(2.9540126, 0, 0, 0, 0.5361675, 0, 0, 0, 3.443332, -30.330214, 14.710788, 1.4001845)
+use_collision = true
 size = Vector3(4.4976044, 22.354965, 11.765984)
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="Data Center" unique_id=1594980047]
 transform = Transform3D(2.8302133, 0, 0, 0, 0.5361675, 0, 0, 0, 3.3459854, -30.143358, 22.00532, 1.1528604)
+use_collision = true
 size = Vector3(7.4749756, 32.13669, 7.800171)
 
 [node name="Box_Entrance?" type="CSGBox3D" parent="Data Center" unique_id=1876030108]
 transform = Transform3D(1.6333637, 0, 0, 0, 0.73247594, 0, 0, 0, 1.8091578, -30.143358, 28.578112, 1.1528604)
+use_collision = true
 size = Vector3(7.4749756, 32.13669, 7.800171)
 
 [node name="CSGBox3D5" type="CSGBox3D" parent="Data Center/Box_Entrance?" unique_id=1948210344]
 transform = Transform3D(0.86339426, 0, 0, 0, 1, 0, 0, 0, 0.87665445, 0, 0, 0)
 operation = 2
+use_collision = true
 size = Vector3(7.4749756, 32.13669, 7.800171)
 
 [node name="CSGBox3D5" type="CSGBox3D" parent="Data Center" unique_id=2023971413]
 transform = Transform3D(1.607772, 0, 0, 0, 0.6160514, 0, 0, 0, 1.6704721, -30.143358, 22.00532, 1.1528604)
 operation = 2
+use_collision = true
 size = Vector3(7.4749756, 32.13669, 7.800171)
 
 [node name="Challenge1 Terrain" type="CSGCombiner3D" parent="." unique_id=162812681]
@@ -178,6 +200,7 @@ sides = 6
 [node name="CSGBox3D" type="CSGBox3D" parent="Challenge1 Terrain/Challenge1Cyl8" unique_id=2106601799]
 transform = Transform3D(0.88147396, 0.31070378, -0.35562173, 2.0201842e-16, 0.17128646, 0.14965157, 0.47223258, -0.5799626, 0.6638069, 0.8182645, 1.7836165, -1.5272102)
 operation = 2
+use_collision = true
 size = Vector3(3.4267578, 2.249878, 6.219486)
 
 [node name="Challenge1Cyl9" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=1107145452]
@@ -225,6 +248,7 @@ sides = 6
 [node name="CSGBox3D" type="CSGBox3D" parent="Challenge1 Terrain/Challenge1Cyl14" unique_id=1287081604]
 transform = Transform3D(0.88147396, 0.31070378, -0.35562173, 2.0201842e-16, 0.17128646, 0.14965157, 0.47223258, -0.5799626, 0.6638069, 1.4665198, 0.14966822, -2.822403)
 operation = 2
+use_collision = true
 size = Vector3(3.4267578, 2.249878, 4.5400543)
 
 [node name="Challenge1Cyl15" type="CSGCylinder3D" parent="Challenge1 Terrain" unique_id=2054464338]
@@ -390,6 +414,7 @@ sides = 6
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="Challenge1 Terrain" unique_id=83153273]
 transform = Transform3D(0.6624467, 0.14901881, -0.7341441, -0.20385915, 0.9788892, 0.014748032, 0.72083867, 0.13989052, 0.67884964, 1.7597184, 23.038965, 79.39255)
+use_collision = true
 size = Vector3(11.626556, 0.042236328, 1)
 
 [node name="Climb out challenge TO BE FINISHED" type="CSGCombiner3D" parent="." unique_id=1939240954]
@@ -406,6 +431,7 @@ spin_sides = 24
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="Climb out challenge TO BE FINISHED" unique_id=270145499]
 transform = Transform3D(-1.4408741, 0, 0, 0, 1, 0, 0, 0, -1.6111498, -88.93798, -1.9337887, -56.446396)
+use_collision = true
 radius = 14.509277
 height = 44.88571
 
@@ -414,10 +440,12 @@ use_collision = true
 
 [node name="Small House or Delivery Structure" type="CSGBox3D" parent="TO BE EDITED" unique_id=2000220700]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.1496544, 16.056747, -51.212635)
+use_collision = true
 size = Vector3(12.2583065, 8.173584, 18.220581)
 
 [node name="Floating Platforms Challenge TO BE FINISHED" type="CSGBox3D" parent="TO BE EDITED" unique_id=195702285]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -69.70389, 28.637535, 42.716244)
+use_collision = true
 size = Vector3(12.2583065, 1.7224121, 18.220581)
 
 [node name="Islet" type="CSGPolygon3D" parent="TO BE EDITED" unique_id=411973952]
