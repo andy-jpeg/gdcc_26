@@ -74,8 +74,8 @@ func handle_effects(delta):
 		var horizontal_velocity = Vector2(velocity.x, velocity.z)
 		var speed_factor = horizontal_velocity.length() / movement_speed / delta
 		if speed_factor > 0.05:
-			if animation.current_animation != "walk":
-				animation.play("walk", 0.1)
+			if animation.current_animation != "run":
+				animation.play("run", 0.1, 1.5)
 
 			if speed_factor > 0.3:
 				sound_footsteps.stream_paused = false
@@ -84,8 +84,8 @@ func handle_effects(delta):
 			if speed_factor > 0.75:
 				particles_trail.emitting = true
 
-		elif animation.current_animation != "Action":
-			animation.play("Action", 0.1)
+		elif animation.current_animation != "idle":
+			animation.play("idle", 0.1)
 			
 		if animation.current_animation == "walk":
 			animation.speed_scale = speed_factor
