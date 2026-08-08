@@ -38,6 +38,8 @@ scale_curve = SubResource("CurveTexture_f46kd")
 [node name="Player" type="CharacterBody3D" unique_id=1348150913]
 script = ExtResource("1_ffboj")
 
+[node name="Character" parent="." unique_id=1137328852 instance=ExtResource("5_f46kd")]
+
 [node name="Collider" type="CollisionShape3D" parent="." unique_id=1508125767]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5334822, -0.0087919235)
 shape = SubResource("CapsuleShape3D_gdq8c")
@@ -63,5 +65,3 @@ stream = ExtResource("5_ics1s")
 volume_db = -2.5
 pitch_scale = 0.1
 autoplay = true
-
-[node name="Character" parent="." unique_id=1326249589 instance=ExtResource("5_f46kd")]
