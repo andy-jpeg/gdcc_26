@@ -24,7 +24,8 @@ config/icon="res://icon.png"
 
 [autoload]
 
-Audio="*res://scripts/audio.gd"
+Audio="*uid://71e1lia2abr7"
+Music="*uid://b8iv0m6fsiq53"
 
 [display]
 

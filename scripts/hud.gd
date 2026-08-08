@@ -41,17 +41,18 @@ func _on_play_pressed() -> void:
 	credits_button.disabled = true
 	var tween := create_tween().set_parallel(true)
 	tween.tween_property(cam_attributes, "dof_blur_amount", 0.0, TWEEN_DURATION)
-	tween.tween_property(title, "position:y", title.position.y - 600, TWEEN_DURATION)\
+	tween.tween_property(title, "position:y", title.position.y - 800, TWEEN_DURATION)\
 		.set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_OUT)
 	tween.chain().tween_callback(_start_game)
 
 func _on_credits_pressed() -> void:
 	play_button.disabled = true
 	credits_button.disabled = true
+	
 	var tween := create_tween().set_parallel(true)
 	tween.tween_property(title, "position:x", -screen_width, TWEEN_DURATION)\
 		.set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_OUT)
-	tween.tween_property(credits_screen, "position:x", credits_visible_x + 25, TWEEN_DURATION)\
+	tween.tween_property(credits_screen, "position:x", credits_visible_x + 50, TWEEN_DURATION)\
 		.set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_OUT)
 
 func _on_back_pressed() -> void:
@@ -68,3 +69,5 @@ func _on_back_pressed() -> void:
 func _start_game() -> void:
 	title.hide()
 	player.process_mode = Node.PROCESS_MODE_INHERIT
+	
+	Music.play("res://sounds/AhOhAhOh.ogg", false)

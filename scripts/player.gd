@@ -77,11 +77,11 @@ func handle_effects(delta):
 		var speed_factor = horizontal_velocity.length() / movement_speed / delta
 		if speed_factor > 0.05:
 			if animation.current_animation != "run":
-				animation.play("run", 0.1, 1.5)
+				animation.play("run", 0.1, 1.75)
 
 			if speed_factor > 0.3:
 				sound_footsteps.stream_paused = false
-				sound_footsteps.pitch_scale = 0.8
+				sound_footsteps.pitch_scale = 0.6
 
 			if speed_factor > 0.75:
 				particles_trail.emitting = true

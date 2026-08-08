@@ -20,6 +20,10 @@ func _on_body_entered(body):
 		grabbed = true
 		
 		set_deferred("monitoring", false)
+		
+		$"/root/Main/HUD/Cutscene".show_cutscene()
+		await $"/root/Main/HUD/Cutscene".show_cutscene()
+		$"/root/Main/HUD/Cutscene".type_dialogue("omg a shell this is so cool!!!!!!!")
 
 func _process(delta):
 	rotate_y(2 * delta)

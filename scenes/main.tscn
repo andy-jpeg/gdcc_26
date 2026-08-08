@@ -7,7 +7,10 @@
 [ext_resource type="PackedScene" uid="uid://dfpisimsgf5ce" path="res://objects/shell.tscn" id="4_85g3d"]
 [ext_resource type="Script" uid="uid://bcg2kkbsnttec" path="res://scripts/view.gd" id="5_bg0fr"]
 [ext_resource type="Texture2D" uid="uid://bi5sg67hy3kcv" path="res://sprites/shell.png" id="9_85g3d"]
+[ext_resource type="Texture2D" uid="uid://bt1170c2063cu" path="res://sprites/logo.png" id="10_choun"]
+[ext_resource type="Script" uid="uid://bp3cpmf1fl0t" path="res://scripts/cutscene.gd" id="10_eb6dy"]
 [ext_resource type="Script" uid="uid://bap462su1xjtx" path="res://scripts/hud.gd" id="11_apvpm"]
+[ext_resource type="Script" uid="uid://g0bc76atnh7w" path="res://scenes/logo.gd" id="11_ya4ey"]
 [ext_resource type="FontFile" uid="uid://d0cxd77jybrcn" path="res://fonts/lilita_one_regular.ttf" id="17_tk810"]
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_ow34m"]
@@ -64,72 +67,8 @@ size_flags_horizontal = 8
 size_flags_vertical = 8
 script = ExtResource("11_apvpm")
 
-[node name="Title" type="Label" parent="HUD" unique_id=802860520]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.0640625
-anchor_top = 0.043055557
-anchor_right = 0.065625
-anchor_bottom = 0.09027782
-offset_left = 350.0
-offset_top = 96.0
-offset_right = 929.0
-offset_bottom = 209.99997
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_constants/shadow_offset_x = 2
-theme_override_constants/shadow_offset_y = 2
-theme_override_fonts/font = ExtResource("17_tk810")
-theme_override_font_sizes/font_size = 128
-text = "> shello world"
-metadata/_edit_use_anchors_ = true
-
-[node name="Play" type="Button" parent="HUD/Title" unique_id=2144026370]
-layout_mode = 0
-offset_left = 21.0
-offset_top = 257.0
-offset_right = 319.0
-offset_bottom = 411.0
-theme_override_fonts/font = ExtResource("17_tk810")
-theme_override_font_sizes/font_size = 96
-flat = true
-
-[node name="Label" type="Label" parent="HUD/Title/Play" unique_id=856763334]
-layout_mode = 0
-offset_right = 298.0
-offset_bottom = 154.0
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_constants/shadow_offset_x = 2
-theme_override_constants/shadow_offset_y = 2
-theme_override_fonts/font = ExtResource("17_tk810")
-theme_override_font_sizes/font_size = 96
-text = "play"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Credits" type="Button" parent="HUD/Title" unique_id=1260649701]
-layout_mode = 0
-offset_left = 389.0
-offset_top = 257.0
-offset_right = 789.0
-offset_bottom = 411.0
-theme_override_fonts/font = ExtResource("17_tk810")
-theme_override_font_sizes/font_size = 96
-flat = true
-
-[node name="Label" type="Label" parent="HUD/Title/Credits" unique_id=1800672078]
-layout_mode = 0
-offset_right = 400.0
-offset_bottom = 154.0
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_constants/shadow_offset_x = 2
-theme_override_constants/shadow_offset_y = 2
-theme_override_fonts/font = ExtResource("17_tk810")
-theme_override_font_sizes/font_size = 96
-text = "credits"
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="Icon" type="TextureRect" parent="HUD" unique_id=324443277]
+visible = false
 layout_mode = 0
 offset_left = 31.999998
 offset_top = 48.0
@@ -140,6 +79,7 @@ texture = ExtResource("9_85g3d")
 expand_mode = 1
 
 [node name="x" type="Label" parent="HUD" unique_id=338098599]
+visible = false
 layout_mode = 0
 offset_left = 112.0
 offset_top = 64.0
@@ -147,9 +87,9 @@ offset_right = 144.0
 offset_bottom = 123.0
 text = "×"
 label_settings = SubResource("LabelSettings_38ys3")
-metadata/_edit_use_anchors_ = true
 
 [node name="Coins" type="Label" parent="HUD" unique_id=291988079]
+visible = false
 layout_mode = 0
 offset_left = 144.0
 offset_top = 64.0
@@ -158,7 +98,6 @@ offset_bottom = 179.0
 text = "0
 "
 label_settings = SubResource("LabelSettings_38ys3")
-metadata/_edit_use_anchors_ = true
 
 [node name="Credits" type="Label" parent="HUD" unique_id=1265121]
 layout_mode = 1
@@ -226,28 +165,112 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Cutscene" type="Control" parent="HUD" unique_id=598939882]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("10_eb6dy")
 
 [node name="BottomBorder" type="ColorRect" parent="HUD/Cutscene" unique_id=711253354]
 layout_mode = 1
 anchors_preset = -1
-anchor_right = 0.031000001
-anchor_bottom = 0.056
-offset_top = 720.0
-offset_right = 1278.76
-offset_bottom = 833.68
+anchor_top = 18.0
+anchor_bottom = 18.0
+offset_top = -12239.0
+offset_right = 1280.0
+offset_bottom = -12123.08
 color = Color(0, 0, 0, 1)
+
+[node name="Dialogue" type="Label" parent="HUD/Cutscene/BottomBorder" unique_id=282984264]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0.56953573, 0.56352663, 0.54037356, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = ExtResource("17_tk810")
+theme_override_font_sizes/font_size = 48
+text = "oo a shell this is so great"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="TopBorder" type="ColorRect" parent="HUD/Cutscene" unique_id=268894715]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.031000001
 anchor_bottom = 0.056
-offset_top = -154.0
+offset_top = -116.0
 offset_right = 1278.76
-offset_bottom = -2.24
+offset_bottom = -40.32
 color = Color(0, 0, 0, 1)
+
+[node name="Title" type="TextureRect" parent="HUD" unique_id=1411051380]
+layout_mode = 0
+offset_left = 228.0
+offset_top = 28.0
+offset_right = 1029.7778
+offset_bottom = 479.0
+expand_mode = 1
+
+[node name="Play" type="Button" parent="HUD/Title" unique_id=2144026370]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 471.0
+offset_right = 315.0
+offset_bottom = 625.0
+theme_override_fonts/font = ExtResource("17_tk810")
+theme_override_font_sizes/font_size = 96
+flat = true
+
+[node name="Label" type="Label" parent="HUD/Title/Play" unique_id=856763334]
+layout_mode = 0
+offset_right = 298.0
+offset_bottom = 154.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = ExtResource("17_tk810")
+theme_override_font_sizes/font_size = 96
+text = "play"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Credits" type="Button" parent="HUD/Title" unique_id=1260649701]
+layout_mode = 0
+offset_left = 385.0
+offset_top = 471.0
+offset_right = 785.0
+offset_bottom = 625.0
+theme_override_fonts/font = ExtResource("17_tk810")
+theme_override_font_sizes/font_size = 96
+flat = true
+
+[node name="Label" type="Label" parent="HUD/Title/Credits" unique_id=1800672078]
+layout_mode = 0
+offset_right = 400.0
+offset_bottom = 154.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_fonts/font = ExtResource("17_tk810")
+theme_override_font_sizes/font_size = 96
+text = "credits"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Logo" type="TextureRect" parent="HUD/Title" unique_id=278530120]
+layout_mode = 0
+offset_left = 7.0
+offset_top = -6.0
+offset_right = 808.77783
+offset_bottom = 445.0
+texture = ExtResource("10_choun")
+expand_mode = 1
+script = ExtResource("11_ya4ey")
 
 [connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]
