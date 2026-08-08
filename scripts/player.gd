@@ -79,7 +79,7 @@ func handle_effects(delta):
 
 			if speed_factor > 0.3:
 				sound_footsteps.stream_paused = false
-				sound_footsteps.pitch_scale = speed_factor
+				sound_footsteps.pitch_scale = 0.8
 
 			if speed_factor > 0.75:
 				particles_trail.emitting = true

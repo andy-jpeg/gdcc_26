@@ -53,15 +53,15 @@ normal_fade = 0.5
 physics_interpolation_mode = 2
 material_override = SubResource("StandardMaterial3D_q7stj")
 cast_shadow = 0
-amount = 60
+amount = 20
 fixed_fps = 0
 process_material = SubResource("ParticleProcessMaterial_3rerk")
 draw_pass_1 = ExtResource("4_mvhqy")
 
 [node name="SoundFootsteps" type="AudioStreamPlayer" parent="." unique_id=671581923]
 stream = ExtResource("5_ics1s")
-volume_db = -5.0
-pitch_scale = 1.25
+volume_db = -2.5
+pitch_scale = 0.1
 autoplay = true
 
 [node name="Character" parent="." unique_id=1326249589 instance=ExtResource("5_f46kd")]
