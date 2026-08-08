@@ -8,6 +8,7 @@ signal coin_collected
 @export_subgroup("Properties")
 @export var movement_speed = 250
 @export var jump_strength = 7
+@export var direction_offset_degrees := 0
 
 var movement_velocity: Vector3
 var rotation_direction: float
@@ -83,8 +84,8 @@ func handle_effects(delta):
 			if speed_factor > 0.75:
 				particles_trail.emitting = true
 
-		elif animation.current_animation != "idle":
-			animation.play("idle", 0.1)
+		elif animation.current_animation != "Action":
+			animation.play("Action", 0.1)
 			
 		if animation.current_animation == "walk":
 			animation.speed_scale = speed_factor
@@ -96,16 +97,21 @@ func handle_effects(delta):
 
 func handle_controls(delta):
 	var input := Vector3.ZERO
-
-	input.x = Input.get_axis("move_right", "move_left")
+	input.x = Input.get_axis("move_left", "move_right")
 	input.z = Input.get_axis("move_back", "move_forward")
-
-	input = input.rotated(Vector3.UP, deg_to_rad(180))
-
 	if input.length() > 1:
 		input = input.normalized()
 
-	movement_velocity = input * movement_speed * delta
+	var cam_basis = view.global_transform.basis
+	var cam_forward = -cam_basis.z
+	var cam_right = cam_basis.x
+	cam_forward.y = 0
+	cam_right.y = 0
+	cam_forward = cam_forward.normalized().rotated(Vector3.UP, deg_to_rad(direction_offset_degrees))
+	cam_right = cam_right.normalized().rotated(Vector3.UP, deg_to_rad(direction_offset_degrees))
+
+	var move_direction = (cam_forward * input.z) + (cam_right * input.x)
+	movement_velocity = move_direction * movement_speed * delta
 
 	if Input.is_action_just_pressed("jump"):
 		if jump_single or jump_double:
