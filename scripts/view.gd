@@ -9,8 +9,8 @@ extends Node3D
 
 @export_group("Zoom")
 @export var zoom_speed = 0.5
-@export var zoom_min = -2.0
-@export var zoom_max = 6.0
+@export var zoom_min = -5.0
+@export var zoom_max = 5.0
 
 @export_group("Collision")
 @export var collision_margin = 0.3

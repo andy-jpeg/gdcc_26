@@ -19,6 +19,8 @@ var previously_floored = false
 var jump_single = true
 var jump_double = true
 
+var current_jump_anim := "jump"
+
 var coins = 0
 
 @onready var particles_trail = $ParticlesTrail
@@ -92,8 +94,8 @@ func handle_effects(delta):
 		else:
 			animation.speed_scale = 1.0
 			
-	elif animation.current_animation != "jump":
-		animation.play("jump", 0.1)
+	elif animation.current_animation != "jump" and animation.current_animation != "jump2":
+		animation.play(current_jump_anim, 0.1)
 
 func handle_controls(delta):
 	var input := Vector3.ZERO
@@ -128,7 +130,9 @@ func jump():
 	Audio.play("res://sounds/jump.ogg")
 	gravity = -jump_strength
 	model.scale = Vector3(0.5, 1.5, 0.5)
-
+	
+	current_jump_anim = "jump2" if current_jump_anim == "jump" else "jump"
+	
 	if jump_single:
 		jump_single = false;
 		jump_double = true;
