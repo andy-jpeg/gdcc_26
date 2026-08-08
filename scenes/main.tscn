@@ -4,9 +4,10 @@
 [ext_resource type="Script" uid="uid://djpme521r3cxe" path="res://scripts/main.gd" id="1_jkv2x"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_onms2"]
 [ext_resource type="PackedScene" uid="uid://div3bxbcwagiq" path="res://scenes/exterior_terrain.tscn" id="3_tipki"]
+[ext_resource type="PackedScene" uid="uid://dfpisimsgf5ce" path="res://objects/shell.tscn" id="4_85g3d"]
 [ext_resource type="Script" uid="uid://bcg2kkbsnttec" path="res://scripts/view.gd" id="5_bg0fr"]
+[ext_resource type="Texture2D" uid="uid://bi5sg67hy3kcv" path="res://sprites/shell.png" id="9_85g3d"]
 [ext_resource type="Script" uid="uid://bap462su1xjtx" path="res://scripts/hud.gd" id="11_apvpm"]
-[ext_resource type="Texture2D" uid="uid://cd7oyc56ehkx1" path="res://sprites/coin.png" id="13_jfda3"]
 [ext_resource type="FontFile" uid="uid://d0cxd77jybrcn" path="res://fonts/lilita_one_regular.ttf" id="17_tk810"]
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_ow34m"]
@@ -21,10 +22,13 @@ shadow_offset = Vector2(2, 2)
 script = ExtResource("1_jkv2x")
 
 [node name="Exterior_Terrain" parent="." unique_id=370708302 instance=ExtResource("3_tipki")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.050994456, 0.5428916, 0.013327718)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.051985323, 0.5710527, 0.009621739)
 
 [node name="Environment" type="WorldEnvironment" parent="." unique_id=1606659274]
 environment = ExtResource("1_ahusb")
+
+[node name="Shell" parent="." unique_id=1300993203 instance=ExtResource("4_85g3d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2375252, 12.810139, 0)
 
 [node name="Player" parent="." unique_id=538096487 node_paths=PackedStringArray("view") groups=["player"] instance=ExtResource("2_onms2")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11.722272, 0)
@@ -126,17 +130,16 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Icon" type="TextureRect" parent="HUD" unique_id=324443277]
-visible = false
 layout_mode = 0
-offset_left = 57.0
-offset_top = 67.0
-offset_right = 313.0
-offset_bottom = 323.0
+offset_left = 31.999998
+offset_top = 48.0
+offset_right = 451.99997
+offset_bottom = 467.99997
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("13_jfda3")
+texture = ExtResource("9_85g3d")
+expand_mode = 1
 
 [node name="x" type="Label" parent="HUD" unique_id=338098599]
-visible = false
 layout_mode = 0
 offset_left = 112.0
 offset_top = 64.0
@@ -147,7 +150,6 @@ label_settings = SubResource("LabelSettings_38ys3")
 metadata/_edit_use_anchors_ = true
 
 [node name="Coins" type="Label" parent="HUD" unique_id=291988079]
-visible = false
 layout_mode = 0
 offset_left = 144.0
 offset_top = 64.0
@@ -222,5 +224,30 @@ theme_override_font_sizes/font_size = 80
 text = "> back"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Cutscene" type="Control" parent="HUD" unique_id=598939882]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BottomBorder" type="ColorRect" parent="HUD/Cutscene" unique_id=711253354]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.031000001
+anchor_bottom = 0.056
+offset_top = 720.0
+offset_right = 1278.76
+offset_bottom = 833.68
+color = Color(0, 0, 0, 1)
+
+[node name="TopBorder" type="ColorRect" parent="HUD/Cutscene" unique_id=268894715]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.031000001
+anchor_bottom = 0.056
+offset_top = -154.0
+offset_right = 1278.76
+offset_bottom = -2.24
+color = Color(0, 0, 0, 1)
 
 [connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]
